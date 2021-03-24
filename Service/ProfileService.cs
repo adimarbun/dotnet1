@@ -32,6 +32,7 @@ namespace Service
 
         public async Task<List<Profils>> GetAllProfilsAsync()
         {
+            //get all data profil
             var result = await _context.Profils.ToListAsync();
             return result;
         }
