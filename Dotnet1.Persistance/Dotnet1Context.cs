@@ -16,6 +16,6 @@ namespace Dotnet1.Persistance
         public DbSet<Posts> Posts { get; set; }
         public DbSet<Profils> Profils { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-           => optionsBuilder.UseNpgsql("Host=localhost;Database=postgres;Username=postgres;Password=changeme");
+           => optionsBuilder.UseNpgsql("Host=db;Database=postgres;Username=postgres;Password=admin");
     } 
 }

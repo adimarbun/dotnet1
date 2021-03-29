@@ -28,7 +28,7 @@ namespace dotnet1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            var connectionString = Configuration["DbContextSetting:ConnectionString"];
+            var connectionString = Configuration["DB_CONNECTION_STRING"];
 
             services.AddDbContext<Dotnet1Context>(options =>
                 options.UseNpgsql(connectionString));
